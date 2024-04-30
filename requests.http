@@ -1,0 +1,25 @@
+GET http://localhost:3000/books HTTP/1.1
+
+###
+GET http://localhost:3000/books/2 HTTP/1.1
+
+###
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "the lord of therings",
+  "autor": "j.r.r tolkien",
+  "año":1954
+
+}
+###
+PUT  http://localhost:3000/books/5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Bestias salvajes"
+}
+
+###
+DELETE  http://localhost:3000/books/4 HTTP/1.1
